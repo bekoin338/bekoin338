@@ -1,0 +1,15 @@
+<ion-content class="ion-padding">
+  <ion-toolbar color = "danger">
+  <h2>Reinitialiser votre mot de passe</h2>
+  </ion-toolbar>
+  <form>
+    <app-input label="Email ID" required></app-input>
+    <app-input label="New Password" type="password" required></app-input>
+    
+
+    <app-button label='Reinitialiser mot de passe' (click)="homePage()"></app-button>
+    
+  </form>
+
+  <p class="footer-text" color = "danger"><a routerLink="/register">Sign Up</a></p>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-content class="ion-padding">
+  <ion-toolbar color = "danger">
+  <h1>Bienvenue,</h1>
+  <h2>Connectez vous et continuer</h2>
+  </ion-toolbar>
+  <form>
+    <app-input label="Email ID" required></app-input>
+    <app-input label="Password" type="password" required></app-input>
+    <a routerLink="/forgot" class="forgot-password-link">Forgot Password?</a>
+
+    <app-button label='Login' (click)="homePage()"></app-button>
+    <app-icon-button icon='logo-facebook' label='Connect with Facebook'></app-icon-button>
+  </form>
+
+  <p class="footer-text">Je suis un nouveau memebre <a routerLink="/register">Sign Up</a></p>
+</ion-content>

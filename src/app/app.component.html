@@ -1,0 +1,64 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+    <ion-toolbar>
+      <ion-title>MENU</ion-title>
+    </ion-toolbar>
+  </ion-header>
+   <ion-content>
+     <ion-list>
+       <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home" slot="start"></ion-icon>
+          <ion-label>home</ion-label>
+         </ion-item>
+       <ion-item routerLink="/login">
+        <ion-icon name="home" slot="start"></ion-icon>
+        <ion-label>login</ion-label>
+       </ion-item>
+       <ion-item routerLink="/outbox"> 
+        <ion-icon name="paper-plane" slot="start"></ion-icon>
+        <ion-label>Outbox</ion-label>
+       </ion-item>
+       <ion-item routerLink="/favorites">
+        <ion-icon name="heart" slot="start"></ion-icon>
+        <ion-label>Favorites</ion-label>
+       </ion-item>
+       <ion-item routerLink="archive"> 
+        <ion-icon name="archive" slot="start"></ion-icon>
+        <ion-label>Archived</ion-label>
+       </ion-item>
+       <ion-item routerLink="/trash">
+        <ion-icon name="trash" slot="start"></ion-icon>
+        <ion-label>Trash</ion-label>
+       </ion-item>
+       <ion-item routerLink="/spam">
+        <ion-icon name="warning" slot="start"></ion-icon>
+        <ion-label>Spam</ion-label>
+       </ion-item>
+      </ion-menu-toggle>
+     </ion-list>
+   </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+  <ion-tabs>
+    <!-- Tab bar -->
+    <ion-tab-bar slot="bottom" color ="primary">
+      <ion-tab-button routerLink="/home" tab="home">
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="logo-codepen">
+        <ion-icon name="logo-codepen">Compagny</ion-icon>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/login" tab="account">
+        <ion-icon name="person"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="document">
+        <ion-icon name="document"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-icon name="construct"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-app>
